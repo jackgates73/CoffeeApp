@@ -1,0 +1,11 @@
+﻿@model Ecommerce.ViewModels.BasketSummaryViewModel
+    
+
+@if(Model.BasketCount > 0){
+        <a asp-area="" asp-controller="Basket" asp-action="">
+            <i class="fas fa-shopping-cart light"></i>
+            <span id="cart-status text-light">
+                @Model.BasketCount
+            </span>
+        </a>
+}
